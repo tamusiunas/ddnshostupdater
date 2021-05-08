@@ -1,0 +1,6 @@
+{
+	"host_name": "PUT YOUR HOSTNAME HERE",
+	"username_host": "PUT THE USERNAME FOR YOUR HOST HERE",
+	"password_host": "PUT THE PASSWORD FOR YOUR HOST HERE",
+	"ip_version": 4
+}

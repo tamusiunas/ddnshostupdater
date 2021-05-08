@@ -1,0 +1,11 @@
+[Unit]
+Description=DDNS Host Updater for Google Domains
+
+[Service]
+User=daemon
+ExecStart=python3 /usr/share/ddnshostupdater/bin/ddnshostupdater.py
+PIDFile=/var/run/ddnshostupdater.pid
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

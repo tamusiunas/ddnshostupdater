@@ -1,0 +1,8 @@
+Package: ddnshostupdater
+Version: 1.0 
+Section: base 
+Priority: optional 
+Architecture: all 
+Depends: python3
+Maintainer: fabricio@tamusiunas.com
+Description: DDNS host updater for Google domains

@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  homebridge:
+    image: tamusiunas/ddnshostupdater
+    container_name: ddnshostupdater
+    restart: always
+    network_mode: host
+    environment:
+      IP_VERSION : 4
+      HOST_NAME : "PUT YOUR HOSTNAME HERE"
+      USERNAME_HOST : "PUT THE USERNAME FOR YOUR HOST HERE"
+      PASSWORD_HOST : "PUT THE PASSWORD FOR YOUR HOST HERE"
+    restart: unless-stopped

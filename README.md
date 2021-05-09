@@ -43,7 +43,7 @@ cd ddnshostupdater
 # Using docker command
 # set your host credentials
 docker run -d --name=ddnshostupdater --user=root \
--e HOST_NAME=<YOUT HOSTNAME>" \
+-e HOST_NAME=<YOUT HOSTNAME> \
 -e USERNAME_HOST=<YOUT USERNAME FOR THE HOST> \
 -e PASSWORD_HOST=<YOUT PASSWORD_HOST FOR THE HOST> \
 -e IP_VERSION=<IP_VERSION (4/6) \

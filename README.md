@@ -27,7 +27,7 @@ wget https://github.com/tamusiunas/ddnshostupdater/releases/download/1.0/ddnshos
 sudo apt install ./ddnshostupdater.deb
 
 #
-# edit config.json and set you host credentials
+# edit /etc/ddnshostupdater/config.json and set you host credentials
 #
 
 systemctl restart ddnshostupdater

@@ -1,6 +1,6 @@
 # DDNS Host Updater for Google Domains
 
-Dynamic DNS (DDNS) is a method of automatically updating a name server in the Domain Name System (DNS), often in real time, with the active DDNS configuration of its configured hostnames, addresses or other information.
+Dynamic DNS (DDNS) is a method for automatically updating a name server in the Domain Name System (DNS), often in real time, with the active DDNS configuration of its configured hostnames, addresses or other information.
 
 Users who have their domain registrations registered with [Google Domains](https://domains.google.com/registrar/) can create synthetic hosts to have their public IP address updated whenever they wish.
 
@@ -20,14 +20,14 @@ cd ddnshostupdater
 python3 ./ddnshostupdater.py
 ```
 
-Universal rpm package
+Universal deb package
 
 ```bash
 wget https://github.com/tamusiunas/ddnshostupdater/releases/download/1.0/ddnshostupdater_1.0.deb
 sudo apt install ./ddnshostupdater.deb
 
 #
-# edit config.json and set you host credentials
+# edit /etc/ddnshostupdater/config.json and set you host credentials
 #
 
 systemctl restart ddnshostupdater
@@ -40,8 +40,18 @@ Docker container for multiple platforms
 git clone https://github.com/tamusiunas/ddnshostupdater
 cd ddnshostupdater
 
+# Using docker command
+# set your host credentials
+docker run -d --name=ddnshostupdater --user=root \
+-e HOST_NAME=<YOUT HOSTNAME> \
+-e USERNAME_HOST=<YOUT USERNAME FOR THE HOST> \
+-e PASSWORD_HOST=<YOUT PASSWORD_HOST FOR THE HOST> \
+-e IP_VERSION=<IP_VERSION (4/6) \
+tamusiunas/ddnshostupdater
+
+# Using docker-compose
 #
-# Edit docker-compose.yml and set you host credentials
+# Edit docker-compose.yml and set your host credentials
 #
 
 docker-compose create # (Create services)

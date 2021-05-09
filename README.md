@@ -20,7 +20,7 @@ cd ddnshostupdater
 python3 ./ddnshostupdater.py
 ```
 
-Universal rpm package
+Universal deb package
 
 ```bash
 wget https://github.com/tamusiunas/ddnshostupdater/releases/download/1.0/ddnshostupdater_1.0.deb

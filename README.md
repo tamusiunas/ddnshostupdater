@@ -6,6 +6,8 @@ Users who have their domain registrations registered with [Google Domains](https
 
 The DDNS Host Updater for Google Domains system is a system that allows automatic updating to the configured host whenever a change of public ip address is noticed.
 
+**Supports IPv4 and IPv6**
+
 There are three ways to use it:
 
 Standalone

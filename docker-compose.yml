@@ -1,6 +1,6 @@
 version: '3.7'
 services:
-  homebridge:
+  ddnshostupdater:
     image: tamusiunas/ddnshostupdater
     container_name: ddnshostupdater
     restart: always

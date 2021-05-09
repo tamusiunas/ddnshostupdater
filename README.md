@@ -40,8 +40,18 @@ Docker container for multiple platforms
 git clone https://github.com/tamusiunas/ddnshostupdater
 cd ddnshostupdater
 
+# Using docker command
+# set your host credentials
+docker run -d --name=ddnshostupdater --user=root \
+-e HOST_NAME=<YOUT HOSTNAME>" \
+-e USERNAME_HOST=<YOUT USERNAME FOR THE HOST> \
+-e PASSWORD_HOST=<YOUT PASSWORD_HOST FOR THE HOST> \
+-e IP_VERSION=<IP_VERSION (4/6) \
+tamusiunas/ddnshostupdater
+
+# Using docker-compose
 #
-# Edit docker-compose.yml and set you host credentials
+# Edit docker-compose.yml and set your host credentials
 #
 
 docker-compose create # (Create services)

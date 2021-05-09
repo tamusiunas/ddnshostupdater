@@ -1,6 +1,6 @@
 # DDNS Host Updater for Google Domains
 
-Dynamic DNS (DDNS) is a method of automatically updating a name server in the Domain Name System (DNS), often in real time, with the active DDNS configuration of its configured hostnames, addresses or other information.
+Dynamic DNS (DDNS) is a method for automatically updating a name server in the Domain Name System (DNS), often in real time, with the active DDNS configuration of its configured hostnames, addresses or other information.
 
 Users who have their domain registrations registered with [Google Domains](https://domains.google.com/registrar/) can create synthetic hosts to have their public IP address updated whenever they wish.
 

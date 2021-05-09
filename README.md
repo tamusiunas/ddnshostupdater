@@ -24,7 +24,7 @@ Universal deb package
 
 ```bash
 wget https://github.com/tamusiunas/ddnshostupdater/releases/download/1.0/ddnshostupdater_1.0.deb
-sudo apt install ./ddnshostupdater.deb
+sudo apt install ./ddnshostupdater_1.0.deb
 
 #
 # edit /etc/ddnshostupdater/config.json and set you host credentials
